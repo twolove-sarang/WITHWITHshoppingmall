@@ -16,8 +16,11 @@ export default function Product() {
     <>
       {isLoading && <p>isLoading...😐</p>}
       {error && <p>something is wrong🫤</p>}
-      <ul className="flex flex-wrap max-w-6xl items-start justify-center">
-        {products && products.map((el) => <ProductsCard products={el} />)}
+      <ul className="flex flex-wrap justify-center mx-auto">
+        {products &&
+          products.map((product) => (
+            <ProductsCard products={product} key={product.id} />
+          ))}
       </ul>
     </>
   );

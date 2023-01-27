@@ -5,6 +5,8 @@ module.exports = {
     extend: {},
     colors: {
       point: "#0284c7",
+      black: "#111111",
+      white: "#ffffdd",
     },
   },
   plugins: [],
