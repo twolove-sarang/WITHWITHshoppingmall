@@ -4,7 +4,7 @@ import useCart from "../hooks/useCart";
 
 export default function MyCarts() {
   const {
-    cartQuery: { isLoading, data: products },
+    cartQuery: { data: products },
   } = useCart();
 
   const totalPrice =
@@ -16,7 +16,6 @@ export default function MyCarts() {
   const SHIPPING = 3000;
   return (
     <div>
-      {isLoading && <p>카트 정보를 불러오고 있습니다.</p>}
       {products &&
         products.map((products) => (
           <CartItem products={products} key={products.id} />

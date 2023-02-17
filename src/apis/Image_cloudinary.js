@@ -6,5 +6,4 @@ export async function cloudinary(file) {
     method: "POST",
     body: formData,
   }).then((res) => res.json());
-  // .then((data) => data.url);
 }

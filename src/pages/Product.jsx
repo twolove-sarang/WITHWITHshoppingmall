@@ -4,19 +4,13 @@ import { downloadFile } from "../apis/Auth_firebase";
 import ProductsCard from "../components/ProductsCard";
 
 export default function Product() {
-  const {
-    isLoading,
-    error,
-    data: products,
-  } = useQuery({
+  const { data: products } = useQuery({
     queryKey: ["products"],
     queryFn: () => downloadFile(),
   });
 
   return (
     <>
-      {isLoading && <p>isLoading...😐</p>}
-      {error && <p>something is wrong🫤</p>}
       {products && (
         <div
           className="w-full h-60 bg-brand px-16 relative"
