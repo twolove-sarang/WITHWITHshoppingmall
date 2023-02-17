@@ -17,6 +17,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 4rem;
+  @apply w-screen max-w-6xl mx-auto;
 }
 
 code {

@@ -9,15 +9,16 @@ export default function ProductsCard({
   const navigate = useNavigate();
   return (
     <>
-      <div
-        onClick={() => navigate(`/product/${id}`, { state: { products } })}
-        className="w-80 mb-16"
-      >
-        <img
-          src={image.url}
-          alt={title}
-          className=" transition-all hover:scale-95 duration-300"
-        />
+      <div onClick={() => navigate(`/product/${id}`, { state: { products } })}>
+        <div
+          style={{
+            backgroundImage: `url(${image.url})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="w-64 h-96 transition-all hover:scale-95 ease-out duration-300
+           mt-10"
+        ></div>
         <div>
           <p className="font-bold text-lg mt-2 hover:text-point hover:cursor-pointer">
             {title}

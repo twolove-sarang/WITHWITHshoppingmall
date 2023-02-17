@@ -6,7 +6,7 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, get, set } from "firebase/database";
+import { getDatabase, ref, get, set, remove } from "firebase/database";
 import { v4 as uuid } from "uuid";
 
 const firebaseConfig = {
@@ -72,4 +72,20 @@ export async function downloadFile() {
       }
       return [];
     });
+}
+
+export async function getCart(userId) {
+  return get(ref(database, `cart/${userId}`)) //
+    .then((snapshot) => {
+      const items = snapshot.val() || {};
+      return Object.values(items);
+    });
+}
+
+export async function addOrUpload(userId, product) {
+  return set(ref(database, `cart/${userId}/${product.id}`), product);
+}
+
+export async function removeCart(userId, productId) {
+  return remove(ref(database, `cart/${userId}/${productId}`));
 }

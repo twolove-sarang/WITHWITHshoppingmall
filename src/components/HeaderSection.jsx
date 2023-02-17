@@ -26,15 +26,19 @@ export default function HeaderSection() {
         )}
 
         {user && user.isAdmin ? (
-          <Link to={"/admin"} className="selectHover">
-            상품수정
-          </Link>
+          <>
+            <Link to={"/admin"} className="selectHover">
+              상품등록
+            </Link>
+          </>
         ) : (
           <div className="flex gap-4">
             <p className="selectHover">마이페이지</p>
-            <p className="selectHover">장바구니</p>
           </div>
         )}
+        <Link to={"/cart"} className="selectHover">
+          장바구니
+        </Link>
       </div>
     </section>
   );

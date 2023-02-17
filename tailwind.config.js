@@ -7,6 +7,7 @@ module.exports = {
       point: "#0284c7",
       black: "#111111",
       white: "#ffffdd",
+      brand: "#e9b9aa",
     },
   },
   plugins: [],
