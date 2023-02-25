@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { uploadFile } from "../apis/Auth_firebase";
-import { cloudinary as cloudiness } from "../apis/Image_cloudinary";
+import React, { useState } from 'react';
+import { uploadFile } from '../apis/Auth_firebase';
+import { cloudinary } from '../apis/Image_cloudinary';
 
 export default function AdminPage() {
   const [product, setProduct] = useState({});
@@ -9,7 +9,7 @@ export default function AdminPage() {
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    if (name === "file") {
+    if (name === 'file') {
       setFile(files && files[0]);
       return;
     }
@@ -19,11 +19,14 @@ export default function AdminPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    cloudiness(file) //
+    cloudinary(file) //
       .then((url) => {
         uploadFile(product, url);
       })
-      .finally(() => setLoading(false));
+      .finally(() => {
+        setProduct({});
+        setLoading(false);
+      });
   };
 
   return (
@@ -50,7 +53,7 @@ export default function AdminPage() {
         <input
           type="text"
           name="title"
-          value={product.title ?? ""}
+          value={product.title ?? ''}
           placeholder="상품명을 적어주세요"
           onChange={handleChange}
           required
@@ -61,7 +64,7 @@ export default function AdminPage() {
           name="price"
           placeholder="가격을 적어주세요"
           onChange={handleChange}
-          value={product.price ?? ""}
+          value={product.price ?? ''}
           required
           id="admin_input"
         />
@@ -70,7 +73,7 @@ export default function AdminPage() {
           name="description"
           placeholder="상품설명을 적어주세요"
           onChange={handleChange}
-          value={product.description ?? ""}
+          value={product.description ?? ''}
           required
           id="admin_input"
         />
@@ -79,7 +82,7 @@ export default function AdminPage() {
           name="option"
           placeholder="옵션을 콤마(,)로 구분해 적어주세요"
           onChange={handleChange}
-          value={product.option ?? ""}
+          value={product.option ?? ''}
           required
           id="admin_input"
         />

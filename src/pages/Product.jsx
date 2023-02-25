@@ -1,11 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
-import React from "react";
-import { downloadFile } from "../apis/Auth_firebase";
-import ProductsCard from "../components/ProductsCard";
+import { useQuery } from '@tanstack/react-query';
+import React from 'react';
+import { downloadFile } from '../apis/Auth_firebase';
+import ProductsCard from '../components/ProductsCard';
 
 export default function Product() {
   const { data: products } = useQuery({
-    queryKey: ["products"],
+    queryKey: ['products'],
     queryFn: () => downloadFile(),
   });
 
@@ -15,9 +15,9 @@ export default function Product() {
         <div
           className="w-full h-60 bg-brand px-16 relative"
           style={{
-            backgroundImage: `url(${products[13].image.url})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundImage: `url(${products[2].image.url})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
           <div
