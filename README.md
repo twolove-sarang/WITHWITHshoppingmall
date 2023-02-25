@@ -1,7 +1,8 @@
 ✅ webpage - https://gleeful-twilight-b5818b.netlify.app/<br/>
 ✅ blog - https://velog.io/@twolove-sarang/쇼핑몰-프로젝트-02-프로젝트-설정-순서
 
-https://user-images.githubusercontent.com/113573974/219534077-27fe12a2-d89e-4f46-a111-47cafba64f6b.gif
+![git](https://user-images.githubusercontent.com/113573974/221340101-ae7db1d7-648d-4184-ae34-965604af9a99.gif)
+
 
 🖥 구현목표<br/>
 
