@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+✅ webpage - https://gleeful-twilight-b5818b.netlify.app/
+✅ blog - https://velog.io/@twolove-sarang/쇼핑몰-프로젝트-02-프로젝트-설정-순서
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://user-images.githubusercontent.com/113573974/219534077-27fe12a2-d89e-4f46-a111-47cafba64f6b.gif
 
-## Available Scripts
+🖥 구현목표
 
-In the project directory, you can run:
+제품들을 등록하고 보여줄 수 있다.
+파이어베이스 로그인 기능으로 어드민/일반유저를 구분 할 수 있다.
+일반 유저의 카트에서 실시간으로 업데이트하거나 삭제 할 수 있다.
+😫 완성 후 아쉬운점
 
-### `npm start`
+ui/ux 업그레이드
+결제시스템 연동 (✔️ 꼭 해보기)
+같은 상품을 두번 담으면 숫자가 올라가거나 중복됐음을 알리기
+✨ 완성 후 느낀 발전한 점
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+커스텀 훅스를 유연하게 사용 할 수 있습니다.
+query를 이해하고 특징을 살펴 볼 수 있었습니다.
+css-backgroundImage설정을 다시한번 살펴 볼 수 있었습니다.
+cloudynary를 이용해 이미지를 업로드 하고 url을 받아와 firebase에서 구현 할 수 있게 되었습니다.
+doc의 중요성을 느끼고 살펴보면서 관련된 내용들을 가져와 나의 프로젝트에 맞게 사용 할 수 있습니다.
